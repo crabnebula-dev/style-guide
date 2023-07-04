@@ -11,6 +11,7 @@
 		"format:check": "prettier --check .",
 		"format": "prettier --write .",
 		"build:sass": "sass src/index.scss dist/css/crabnebula.css && cleancss -o dist/css/crabnebula.min.css dist/css/crabnebula.css",
+		"build:mdsass": "sass src/mdbook.scss dist/css/mdbook/crabnebula.md.css && cleancss -o dist/css/mdbook/crabnebula.md.min.css dist/css/mdbook/crabnebula.md.css",
 		"build:docs": "hugo --cleanDestinationDir --printUnusedTemplates",
 		"build": "npm-run-all 'build:*'",
 		"serve:sass": "sass -w src/index.scss dist/css/crabnebula.css",

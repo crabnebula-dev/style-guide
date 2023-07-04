@@ -29,6 +29,24 @@ a:hover {
 	color: styles.$base-link-hover-color;
 }
 
+a {
+	text-decoration: none;
+	background: linear-gradient(to right, rgba(203, 70, 255, 0.452), rgba(255, 96, 175, 0.432)),
+		linear-gradient(to right, rgba(0, 255, 85, 0.6), rgba(0, 100, 200, 0.6));
+	background-size: 100% 3px, 0 3px;
+	background-position: 100% 100%, 0% 100%;
+	background-repeat: no-repeat;
+	transition: background-size 200ms ease;
+	padding: 4px 4px;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+a:hover {
+	background-size: 100% 100%, 0% 100%;
+	color: #fff;
+}
+
 hr {
 	opacity: 23%;
 }
@@ -84,4 +102,10 @@ div.cn-container {
 ::selection {
 	color: styles.$dark-blue;
 	background: styles.$light-blue;
+}
+
+@media (prefers-reduced-motion) {
+	a {
+		transition: none;
+	}
 }
