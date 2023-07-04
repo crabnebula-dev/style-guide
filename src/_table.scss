@@ -1,0 +1,53 @@
+/**
+ * Copyright 2023 CrabNebula Ltd.
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+@use "gridsystem";
+@use "styles";
+
+table {
+	font-size: 0.75em;
+	display: flex;
+	flex-direction: row;
+	border-collapse: collapse;
+}
+
+tbody {
+	display: flex;
+	flex-direction: row;
+}
+
+td,
+th {
+	padding: gridsystem.$grid2-2x;
+	transition: styles.$anim-speed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&:nth-child(odd) {
+		background-color: #ffffff10;
+	}
+}
+
+td:hover,
+th:hover {
+	scale: 1.05;
+	background-color: #ffffff20;
+	border-radius: gridsystem.$grid2-1x;
+}
+
+thead {
+	background-color: #ffffff20;
+}
+
+tr:hover {
+	background-color: #ffffff0e;
+}
+
+@media (prefers-reduced-motion) {
+	td,
+	th {
+		transition: none;
+	}
+}

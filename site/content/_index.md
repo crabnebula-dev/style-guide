@@ -146,10 +146,35 @@ systematic and organized manner. Tables provide a grid-like layout consisting of
 containing specific data.
 
 <div class="docs-example">
+<table>
+	<thead>
+		<tr>
+			<th>App Size</th> <th>Unit Time (100Mb/s)</th> <th>Downloads</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>1,000</td></tr>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>100,000</td></tr>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>10,000,000</td></td>
+		</tr></tr>
+	</tbody>
+</table>
 </div>
 
 ```html
-<!-- TBD -->
+<table>
+	<thead>
+		<tr>
+			<th>App Size</th> <th>Unit Time (100Mb/s)</th> <th>Downloads</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>1,000</td></tr>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>100,000</td></tr>
+		<tr><td>3 MB</td> <td>240 milliseconds</td> <td>10,000,000</td></td>
+		</tr></tr>
+	</tbody>
+</table>
 ```
 
 ## Colors
