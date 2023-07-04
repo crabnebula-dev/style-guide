@@ -4,6 +4,7 @@
  */
 
 @use "styles";
+@use "gridsystem";
 
 body {
 	margin: 0;
@@ -56,4 +57,31 @@ div.cn-container {
 
 .text-right {
 	text-align: right;
+}
+
+::-webkit-scrollbar {
+	width: gridsystem.$grid2-1x;
+}
+
+::-webkit-scrollbar-track {
+	background: #000010;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 99px;
+	background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ebceff;
+}
+
+::-moz-selection {
+	color: styles.$dark-blue;
+	background: styles.$light-blue;
+}
+
+::selection {
+	color: styles.$dark-blue;
+	background: styles.$light-blue;
 }

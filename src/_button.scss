@@ -4,6 +4,7 @@
  */
 
 @use "styles";
+@use "gridsystem";
 
 button,
 a.cn-btn {
@@ -12,9 +13,9 @@ a.cn-btn {
 	cursor: pointer;
 	outline: 0;
 	margin: 0;
-	padding: 12px 24px;
+	padding: gridsystem.$grid2-2x;
 	border: 0;
-	border-radius: 8px;
+	border-radius: gridsystem.$grid2-1x;
 	color: inherit;
 	text-decoration: none;
 	font: inherit;
@@ -31,6 +32,7 @@ a.cn-btn {
 	letter-spacing: normal;
 	box-sizing: border-box;
 	appearance: auto;
+	transition: styles.$anim-speed styles.$anim-ease;
 }
 
 button,
@@ -40,4 +42,16 @@ button,
 
 .cn-btn-link {
 	background: transparent;
+}
+
+button:hover,
+a.cn-btn:hover {
+	scale: 1.05;
+}
+
+@media (prefers-reduced-motion) {
+	button,
+	a.cn-btn {
+		transition: none;
+	}
 }

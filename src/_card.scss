@@ -4,12 +4,13 @@
  */
 
 @use "styles";
+@use "gridsystem";
 
 div.cn-card {
 	box-sizing: border-box;
 
 	background: styles.$card-background;
-	border-radius: 16px;
+	border-radius: gridsystem.$grid2-2x;
 	padding: 10px 20px 20px;
 	border: 1px solid styles.$card-border-color;
 }

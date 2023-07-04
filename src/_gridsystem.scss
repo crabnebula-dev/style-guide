@@ -1,0 +1,16 @@
+/**
+ * Copyright 2023 CrabNebula Ltd.
+ * SPDX-License-Identifier: AGPL-3.0-only
+ */
+
+// CrabNebula Grid(Squared) system
+// a 2x2 grid system, 8px, 16px, 32px, 64px, 128px...
+// for padding, margins, gaps, and general content layout
+$grid2-1x: 0.5rem;
+$grid2-2x: 1rem;
+$grid2-3x: 2rem;
+$grid2-4x: 4rem;
+$grid2-5x: 8rem;
+$grid2-6x: 16rem;
+$grid2-7x: 32rem;
+$grid2-8x: 64rem;
